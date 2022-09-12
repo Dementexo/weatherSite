@@ -1,0 +1,19 @@
+@media all and (min-width: 958px){
+   .conditionContainer{
+      width:10% !important;
+      height:20% !important;
+   }
+   .cpHolder{
+      width: 3.5vw !important;
+      height: 3.5vw !important;
+   }
+   .weatherConditionsData1{
+      font-size: 1rem !important;
+   }
+   .weatherConditionsData2{
+      font-size: 0.65rem !important;
+   }
+   .tempSection{
+   font-size:0.8rem !important;
+   }
+}

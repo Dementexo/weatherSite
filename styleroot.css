@@ -1,0 +1,258 @@
+.siteContainer{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    height:100vh;
+    background-color: rgb(219, 219, 219);
+    transition: all 0.5s ease-in-out;
+}
+.apiCreditHeader{
+    display:flex;
+    background-color: rgb(19, 11, 32);
+    height:6%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+.themeSlider{
+    display:flex;
+    background-color: rgb(50, 29, 82);
+    width:5%;
+    margin-right:93%;
+    border-radius:15vw;
+    transition: all 0.5s ease-in-out;
+}
+#themeButton{
+    width:1.2vw;
+    height:1.2vw;
+    border-radius:15vw;
+    margin-left:4%;
+    margin-top:4%;
+    margin-bottom:4%;
+    background-color: rgb(255, 63, 129);
+    border: solid 0.1vw rgb(58, 35, 97);
+    transition: all 0.5s ease-in-out;
+}
+.creditContainer{
+    display:flex;
+    width:fit-content;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    position:absolute;
+    font-size:1rem;
+}
+.omwImgLink{
+    display:flex;
+    border-radius:100%;
+}
+.conditionContainer{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(19, 11, 32);
+    width:15%;
+    height:20%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3%;
+    margin-bottom:1%;
+    border-radius:1vw;
+    transition: all 0.5s ease-in-out;
+}
+.cpHolder{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    border: solid rgb(255, 63, 129);
+    border-radius:100%;
+    width:5vw;
+    height:5vw;
+    border-width:0.1vw;
+    background-color: rgb(58, 35, 97);
+}
+.weatherConditionsData1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40%;
+    color:white;
+    margin-top:auto;
+    margin-bottom:3%;
+    font-size:1em;
+    height:10%;
+    background-color: rgb(58, 35, 97);
+    margin-left:auto;
+    margin-right:auto;
+    border: solid rgb(255, 63, 129);
+    border-width: 0.1vw;
+    border-radius:2vw;
+    padding-left:2%;
+    padding-right:2%;
+}
+.weatherConditionsData2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:60%;
+    color:white;
+    margin-bottom:auto;
+    font-size:1em;
+    height:10%;
+    background-color: rgb(58, 35, 97);
+    margin-left:auto;
+    margin-right:auto;
+    border: solid rgb(255, 63, 129);
+    border-width: 0.1vw;
+    border-radius:2vw;
+    padding-left:2%;
+    padding-right:2%;
+}
+.searchContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5%;
+    margin-bottom:3%;
+    margin-left:auto;
+    margin-right:auto;
+    width:45%;
+}
+#cityEntry{
+    background-color: rgb(58, 35, 97);
+    border:solid rgb(19, 11, 32);
+    height:60%;
+    border-radius:15vw;
+    border-width:thin;
+    transition: all 0.5s ease-in-out;
+}
+#stateEntry{
+    background-color: rgb(58, 35, 97);
+    border:solid rgb(19, 11, 32);
+    height:60%;
+    border-radius:15vw;
+    border-width:thin;
+    transition: all 0.5s ease-in-out;
+}
+input[type=text]{
+    padding-left:1%;
+    color:white;
+}
+::placeholder{
+    padding-left:1%;
+    color:white;
+    opacity:0.8;
+}
+#searchButton{
+    width: 2vw;
+    height:2vw;
+    margin-left:3%;
+    margin-right:2%;
+    background-color: rgb(58, 35, 97);
+    border-style: solid;
+    border-radius:15vw;
+    border-width:thin;
+    transition: all 0.5s ease-in-out;
+}
+.dataContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:35%;
+    height:55%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.tempSection{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: rgb(19, 11, 32);
+    width: 35%;
+    height:40%;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    font-size:0.8rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.totalTempContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.tempConditionUpdate{
+    align-content:center;
+    border: solid white;
+    border-radius:100%;
+    background-color: rgb(58, 35, 97);
+    width:3vw;
+    height:3vw;
+    border-width:0.1vw;
+}
+.tempContainer{
+    width:30%;
+    margin-top:2%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.secLogo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(58, 35, 97);
+    width:1.5vw;
+    height:1.5vw;
+    border-radius:15vw;
+    margin-right:81%;
+    margin-top:3%;
+    transition: all 0.5s ease-in-out;
+}   
+.windSection{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: rgb(19, 11, 32);
+    width: 35%;
+    height:40%;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    font-size:1.2rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.weatherSection{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: rgb(19, 11, 32);
+    width: 35%;
+    height:40%;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    font-size:1.2rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.otherSection{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: rgb(19, 11, 32);
+    width: 35%;
+    height:40%;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    font-size:1.2rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
