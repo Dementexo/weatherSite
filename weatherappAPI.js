@@ -13,7 +13,7 @@ function displayWeather(data){
     let currentCondition = data.weather[0].main;
     let locationLat = data.coord.lat;
     let locationLon = data.coord.lon;
-    let currentTemp = data.main.temp;
+    let currentTemp = data.main.temp; 
     let tempMin = data.main.temp_min;
     let tempMax = data.main.temp_max;
     let wcd1 = document.querySelector(".weatherConditionsData1");
