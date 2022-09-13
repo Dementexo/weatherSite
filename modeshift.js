@@ -23,7 +23,7 @@ let currentMode = "dark";
 function themeChange(){
     if(currentMode == "dark")
     {
-        themeButton.style.marginLeft = "65%";
+        themeButton.style.marginLeft = "74%";
         currentMode = "white";
         return 0;
     }
