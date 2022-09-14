@@ -210,7 +210,6 @@ input[type=text]{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-right:auto;
     background-color: rgb(58, 35, 97);
     width:1.5vw;
     height:100%;
@@ -227,10 +226,18 @@ input[type=text]{
     height:32%;
     border-radius: 1vw;
     transition: all 0.5s ease-in-out;
-    font-size:1.2rem;
     color:white;
     transition: all 0.5s ease-in-out;
     opacity:0.97;
+}
+.windData{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:80%;
+    height:80%;
+    font-size:1rem;
+    margin:auto;
 }
 .weatherSection{
     display:flex;
@@ -240,10 +247,19 @@ input[type=text]{
     height:32%;
     border-radius: 1vw;
     transition: all 0.5s ease-in-out;
-    font-size:1.2rem;
     color:white;
     transition: all 0.5s ease-in-out;
     opacity:0.97;
+}
+.weatherData{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:80%;
+    height:80%;
+    font-size:1rem;
+    margin-left:auto;
+    margin-right:auto;
 }
 .otherSection{
     display:flex;

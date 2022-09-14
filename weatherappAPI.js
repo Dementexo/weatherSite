@@ -9,6 +9,7 @@ function dataFetch(){
         .then((data) => displayWeather(data));
 }
 function displayWeather(data){
+    let weatherID = data.weather[0].id;
     let conditionIcon = data.weather[0].icon;
     let currentCondition = data.weather[0].main;
     let locationLat = data.coord.lat;
@@ -16,8 +17,17 @@ function displayWeather(data){
     let currentTemp = data.main.temp; 
     let tempMin = data.main.temp_min;
     let tempMax = data.main.temp_max;
+    let windSpeed = data.wind.speed;
+    let windDegree = data.wind.deg;
+    let visibility = data.visibility;
+    let conditionDescription = data.weather[0].description;
+    let rainConditions = 0;
+    let cloudiness = data.clouds.all;
     let wcd1 = document.querySelector(".weatherConditionsData1");
     let wcd2 = document.querySelector(".weatherConditionsData2");
+    if (weatherID < 532){
+        rainConditions = data.rain["1h"];
+    }
     document.querySelector("#conditionPicSRC").src = "https://openweathermap.org/img/wn/" + conditionIcon + ".png";
     document.querySelector("#conditionPicSRC").style.visibility = "visible";
     document.querySelector("#tcpSRC").src = "https://openweathermap.org/img/wn/" + conditionIcon + ".png";
@@ -29,6 +39,12 @@ function displayWeather(data){
     document.querySelector(".ctData").innerHTML = currentTemp + "°F";
     document.querySelector(".tlData").innerHTML = tempMin + "°F";
     document.querySelector(".thData").innerHTML = tempMax + "°F";
+    document.querySelector(".windSpeed").innerHTML = "WindSpeed: " + windSpeed + "mph";
+    document.querySelector(".windDegree").innerHTML = "WindDegree: " + windDegree + "°";
+    document.querySelector(".windVisibility").innerHTML = "Visibility: " + visibility + "km";
+    document.querySelector(".conditionDescription").innerHTML = "Description: " + conditionDescription;
+    document.querySelector(".rainVolume").innerHTML = "Rain (1-hour period): " + rainConditions + "mm";
+    document.querySelector(".cloudPercentage").innerHTML = "Cloudiness: " + cloudiness + "%";
     if (currentTemp >= 70){
         document.querySelector(".tempConditionUpdate").style.backgroundColor = "rgb(255, 140, 0, 0.6)";
     }
