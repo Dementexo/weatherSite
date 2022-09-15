@@ -176,7 +176,6 @@ input[type=text]{
     height:32%;
     border-radius: 1vw;
     transition: all 0.5s ease-in-out;
-    font-size:0.8rem;
     color:white;
     opacity:0.97;
     transition: all 0.5s ease-in-out;
@@ -205,6 +204,7 @@ input[type=text]{
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    font-size:0.6vw;
 }
 .secLogo{
     display:flex;
@@ -232,12 +232,73 @@ input[type=text]{
 }
 .windData{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:space-between;
     width:80%;
     height:80%;
-    font-size:1rem;
+    font-size:0.8rem;
     margin:auto;
+}
+.windSpeed{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+}
+.wsValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+}
+.windDegree{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    margin-top:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+}
+.wdValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:1.2rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
+}
+.windVisibility{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+}
+.wvValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
 }
 .weatherSection{
     display:flex;
@@ -246,20 +307,80 @@ input[type=text]{
     width: 45%;
     height:32%;
     border-radius: 1vw;
-    transition: all 0.5s ease-in-out;
     color:white;
     transition: all 0.5s ease-in-out;
     opacity:0.97;
 }
 .weatherData{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:space-between;
     width:80%;
     height:80%;
-    font-size:1rem;
-    margin-left:auto;
-    margin-right:auto;
+    font-size:0.8rem;
+    margin:auto;
+}
+.conditionDescription{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+}
+.cdValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+}
+.rainVolume{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+    margin-top:10%;
+}
+.rvValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:1.2rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
+}
+.cloudPercentage{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+    margin-top:auto;
+}
+.cpValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
 }
 .otherSection{
     display:flex;
@@ -268,8 +389,78 @@ input[type=text]{
     width: 45%;
     height:32%;
     border-radius: 1vw;
-    font-size:1.2rem;
     color:white;
     transition: all 0.5s ease-in-out;
     opacity:0.97;
+}
+.otherData{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:80%;
+    height:80%;
+    font-size:0.8rem;
+    margin:auto;
+}
+.humidityData{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+    margin-top:auto;
+}
+.hdValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+}
+.pressureData{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+    margin-top:10%;
+}
+.pdValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:1.2rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
+}
+.countryData{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+    width:auto;
+    background-color: rgb(172, 37, 84);
+    padding:1.5%;
+    border-radius:0.4vw;
+    font-size:0.65vw;
+}
+.cValue{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.8rem;
+    background-color: rgb(58, 35, 97);
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw; 
 }

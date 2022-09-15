@@ -23,6 +23,9 @@ function displayWeather(data){
     let conditionDescription = data.weather[0].description;
     let rainConditions = 0;
     let cloudiness = data.clouds.all;
+    let humidity = data.main.humidity;
+    let airPressure = data.main.pressure;
+    let country = data.sys.country;
     let wcd1 = document.querySelector(".weatherConditionsData1");
     let wcd2 = document.querySelector(".weatherConditionsData2");
     if (weatherID < 532){
@@ -39,12 +42,15 @@ function displayWeather(data){
     document.querySelector(".ctData").innerHTML = currentTemp + "°F";
     document.querySelector(".tlData").innerHTML = tempMin + "°F";
     document.querySelector(".thData").innerHTML = tempMax + "°F";
-    document.querySelector(".windSpeed").innerHTML = "WindSpeed: " + windSpeed + "mph";
-    document.querySelector(".windDegree").innerHTML = "WindDegree: " + windDegree + "°";
-    document.querySelector(".windVisibility").innerHTML = "Visibility: " + visibility + "km";
-    document.querySelector(".conditionDescription").innerHTML = "Description: " + conditionDescription;
-    document.querySelector(".rainVolume").innerHTML = "Rain (1-hour period): " + rainConditions + "mm";
-    document.querySelector(".cloudPercentage").innerHTML = "Cloudiness: " + cloudiness + "%";
+    document.querySelector(".wsValue").innerHTML = windSpeed + "mph";
+    document.querySelector(".wdValue").innerHTML = windDegree + "°";
+    document.querySelector(".wvValue").innerHTML = visibility + "km";
+    document.querySelector(".cdValue").innerHTML = conditionDescription;
+    document.querySelector(".rvValue").innerHTML = rainConditions + "mm";
+    document.querySelector(".cpValue").innerHTML = cloudiness + "%";
+    document.querySelector(".hdValue").innerHTML = humidity + "%";
+    document.querySelector(".pdValue").innerHTML = + airPressure;
+    document.querySelector(".cValue").innerHTML = country;
     if (currentTemp >= 70){
         document.querySelector(".tempConditionUpdate").style.backgroundColor = "rgb(255, 140, 0, 0.6)";
     }
