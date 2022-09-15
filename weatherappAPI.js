@@ -49,7 +49,7 @@ function displayWeather(data){
     document.querySelector(".rvValue").innerHTML = rainConditions + "mm";
     document.querySelector(".cpValue").innerHTML = cloudiness + "%";
     document.querySelector(".hdValue").innerHTML = humidity + "%";
-    document.querySelector(".pdValue").innerHTML = + airPressure;
+    document.querySelector(".pdValue").innerHTML = + airPressure + "hPa";
     document.querySelector(".cValue").innerHTML = country;
     if (currentTemp >= 70){
         document.querySelector(".tempConditionUpdate").style.backgroundColor = "rgb(255, 140, 0, 0.6)";
